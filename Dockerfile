@@ -7,7 +7,7 @@ VOLUME /tmp
 EXPOSE 8080
 
 # указываем, где в нашем приложении лежит джарник
-ARG JAR_FILE=conver/target/convertator-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/convertator-0.0.1-SNAPSHOT.jar
 
 # добавляем джарник в образ под именем rebounder-chain-backend.jar
 ADD ${JAR_FILE} convertator-0.0.1-SNAPSHOT.jar
